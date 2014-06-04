@@ -12,7 +12,8 @@ calcCorners <- function(x.known, y.known,
   
   alpha<- orientation+declination
   alpha2<-alpha+90
-  alpha3<-alpha+270
+  alpha3<-alpha2+90
+  alpha4<-alpha3+90
   distAB<- calculateTriangle(alpha, size.y)
   distAD<- calculateTriangle(alpha, size.x)
   distBC<- calculateTriangle(alpha2, size.x)
